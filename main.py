@@ -70,7 +70,17 @@ def main():
 
     # Paso 3: Solicitar webhook de Discord
     webhook = input("Ingresa el webhook de Discord (opcional): ").strip()
-
+    if webhook:
+        if validacion_webhook(webhook):
+            console.print("[✓] Webhook válido.",style=purple)
+            time.sleep(2)
+        else:
+            console.print("[!] El webhook ingresado no es válido.",style="yellow")
+            time.sleep(3)
+            exit()
+    else:
+        console.print("[!] No se proporcionó un webhook.",style="red")
+        
     limpiar_consola()
 
     # Paso 4: Verificar disponibilidad de cada nombre
@@ -116,7 +126,21 @@ def actualizar_titulo(procesados,total):
     ctypes.windll.kernel32.SetConsoleTitleW(title)
 
 
-        
+def validacion_webhook(webhook):
+    if not webhook:
+        return False  # Si el webhook está vacío, no es válido
+
+    # Patrones válidos para un webhook de Discord
+    valid_patterns = [
+        "https://discord.com/api/webhooks/",
+        "https://discordapp.com/api/webhooks/",
+        "discord.com/api/webhooks/",
+        "discordapp.com/api/webhooks/"
+    ]
+    for pattern in valid_patterns:
+        if webhook.startswith(pattern):
+            return True
+    return False
 
 def limpiar_consola():
     os.system("cls" if os.name == "nt" else "clear")
@@ -184,16 +208,15 @@ def verificar_disponibilidad_github(nombre):
 def verificar_disponibilidad_faceit(nombre):
     url = f"https://faceitanalyser.com/stats/{nombre}/cs2"
     response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'lxml')  # Usamos lxml como parser
+    soup = BeautifulSoup(response.content, 'lxml')
     title = soup.find('title').text.strip()
-    return title == "Player Not Found"  # Comparación exacta del título
+    return title == "Player Not Found" 
+
 
 def verificar_disponibilidad_instagram(nombre):
-    # URL ajustada sin 'www' ni '/'
     url = f"https://instagram.com/{nombre}"
     
     try:
-        # Realizar la solicitud HTTP sin encabezados personalizados
         response = requests.get(url, allow_redirects=True)
         
         # Analizar el contenido de la página

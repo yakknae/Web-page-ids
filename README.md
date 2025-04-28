@@ -25,7 +25,7 @@
 2. Abre una terminal o línea de comandos (cmd).
    Navega hasta la carpeta donde se encuentra el archivo main.py:
 
-3. ejetutar
+3. Iniciar con:
    > py main.py
 
 ## Licencia
@@ -34,4 +34,4 @@ Este proyecto está bajo la licencia MIT . Consulta el archivo LICENSE para más
 
 ## Créditos
 
-Desarrollado por gris & saku.
+Desarrollado por [gris](https://github.com/yakknae) & [saku](https://github.com/ripsaku/steam-id-checker/releases).
