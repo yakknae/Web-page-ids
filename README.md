@@ -1,38 +1,41 @@
 # Available Web Page IDs
 
-- Available Web Page IDs es una herramienta diseñada para rastrear la disponibilidad de nombres de usuario (IDs) en plataformas como Steam , GitHub , Instagram y Twitter . Con esta herramienta, puedes verificar si un nombre de usuario está disponible o ya está en uso en estas plataformas.
-  
-![Preview](media/hh.png)
+**Available Web Page IDs** es una herramienta diseñada para rastrear la disponibilidad de nombres de usuario (IDs) en plataformas populares como Steam, GitHub, Instagram y Twitter. Con esta utilidad, puedes verificar de manera sencilla si un nombre de usuario específico está libre o ya ha sido tomado en estas plataformas.
 
-## Características
+![Vista Previa](media/hh.png)
 
-### Compatibilidad con múltiples plataformas:
+## Características Principales
 
-- Steam
-- GitHub
-- Instagram
-- Twitter
-  Fácil de usar : Simplemente manda una lista de nombres de usuario (.txt).
+* **Compatibilidad Multiplataforma:** Verifica la disponibilidad en:
+    * Steam
+    * GitHub
+    * Instagram
+    * Twitter
+* **Facilidad de Uso:** Simplemente proporciona una lista de nombres de usuario a través de un archivo de texto (.txt).
 
-## Requisitos
+## Requisitos del Sistema
 
-- Python 3.8 o superior
+* Python 3.8 o superior instalado.
 
 ## Instalación
 
-1. Dependencias del proyecto:
+1.  **Instalar Dependencias:**
+    Abre tu terminal o símbolo del sistema y ejecuta el siguiente comando para instalar las bibliotecas necesarias:
 
-   > pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-2. Abre una terminal o línea de comandos (cmd).
-   Navega hasta la carpeta donde se encuentra el archivo main.py:
+2.  **Ejecutar la Herramienta:**
+    Navega hasta el directorio donde se encuentra el archivo `main.py` y ejecuta la herramienta con el siguiente comando:
 
-3. Iniciar con:
-   > py main.py
+    ```bash
+    py main.py
+    ```
 
 ## Licencia
 
-Este proyecto está bajo la licencia MIT . Consulta el archivo LICENSE para más detalles.
+Este proyecto se distribuye bajo la Licencia MIT. Para obtener más detalles, consulta el archivo [LICENSE](LICENSE).
 
 ## Créditos
 
