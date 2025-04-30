@@ -34,4 +34,4 @@ Este proyecto está bajo la licencia MIT . Consulta el archivo LICENSE para más
 
 ## Créditos
 
-Desarrollado por [gris](https://github.com/yakknae) & [saku](https://github.com/ripsaku/steam-id-checker/releases).
+Desarrollado por [gris](https://github.com/yakknae) & [saku](https://github.com/ripsaku).
