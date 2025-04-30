@@ -235,6 +235,16 @@ def verificar_disponibilidad_instagram(nombre):
         print(f"Error inesperado: {e}")
         return False
 
+def cambiar(saku):
+    h = [
+        "hola",
+        "saku",
+        "yo",
+    ]
+
+    for t in h:
+        return
+
 def mostrar_resultados(nombre, disponible):
     if disponible:
         console.print(f"[bold green]{nombre}[/bold green] está disponible")
