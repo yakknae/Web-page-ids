@@ -1,6 +1,8 @@
 # Available Web Page IDs
 
 - Available Web Page IDs es una herramienta diseñada para rastrear la disponibilidad de nombres de usuario (IDs) en plataformas como Steam , GitHub , Instagram y Twitter . Con esta herramienta, puedes verificar si un nombre de usuario está disponible o ya está en uso en estas plataformas.
+  
+![Preview](media/hh.png)
 
 ## Características
 
